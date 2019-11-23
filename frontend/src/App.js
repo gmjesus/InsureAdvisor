@@ -6,6 +6,7 @@ import Redirect from './Components/Redirect';
 import BrokerForm from './Components/BrokerForm';
 import ContactForm from './Components/ContactForm';
 import AboutForm from './Components/AboutForm';
+import PostSubmit from './Components/PostSubmit'
 
 import {
   BrowserRouter as Router,
@@ -19,9 +20,10 @@ function App() {
       <div>
         <Navigate className='sample'/>
         <Switch>
-          <Route exact path="/">
+        <Route exact path="/">
             <h1 className='intro-text'> Welcome to InsureAdvisor</h1>
             <Redirect />
+            <img src = 'https://www.exzie.io/dist/images/welcome.gif' className='home-image'></img>
           </Route>
           <Route path="/user-form">
             <div className='user-form'>
@@ -42,6 +44,10 @@ function App() {
             <div className='user-form'>
               <AboutForm className='uForm'></AboutForm>       
             </div>
+          </Route>
+          <Route>
+          <PostSubmit>
+          </PostSubmit>
           </Route>
         </Switch>
       </div>

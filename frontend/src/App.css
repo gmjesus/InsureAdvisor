@@ -25,11 +25,32 @@
   background-color: transparent;
 }
 
+
 .intro-text{
+  margin-top: -10rem;
+  color: black; 
+  font: bold 52px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #ffffff, 
+               2px 2px #ffffff, 
+               3px 3px #ffffff;
+  text-align: center;
+  padding: 20rem;
+  margin-bottom: 10rem;
+  transition-duration: 2s;
+}
+
+.intro-text:hover{
+  transition-duration: 2s;
+  color: white; 
+  font: bold 52px Helvetica, Arial, Sans-Serif;
+  text-shadow: 1px 1px #000000, 
+               2px 2px #000000, 
+               3px 3px #000000;
   text-align: center;
   padding: 20rem;
   margin-bottom: 10rem;
 }
+
 
 body{
 background: url(https://images.pond5.com/young-man-office-cartoon-hd-footage-088280711_prevstill.jpeg) fixed;
@@ -59,5 +80,84 @@ border-color: black;
 .img1{
   height: 10rem;
 }
+
+
+.submitb{
+  background-color: #0284fe;
+  }
+  
+  
+  .buttons{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 10rem;
+  margin-top: -100rem;
+  }
+  
+  .button1{
+    margin-top: -35rem;
+    margin-bottom: 32rem;
+    background-color: transparent;
+  width: 25%;
+  transition-duration: 1s;
+  border-color: #000000;
+  
+  }
+  
+  .button1:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+    background-color: #ffffff;
+    border-color: #000000;
+  }
+  
+  
+  .button2{
+    margin-top: -35rem;
+    margin-bottom: 32rem;
+    background-color: transparent;
+  width: 25%;
+  transition-duration: 1s;
+  border-color: #000000;
+  
+  }
+  
+  .button2:hover{
+    transform: scale(1.1);
+    transition-duration: .5s;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .home-image{
+    float: right;
+    border-radius: 50%;
+    margin-top: -40rem;
+  }
+  
+  
+  .post-displayy{
+    background-color: rgba(238, 238, 238, 0.4) !important;
+  background-image: url(https://biocharculture.xyz/image/62772-full_image-to-video-filter-confetti.gif);
+  background-blend-mode: color;
+    width: 40%;
+  }
+  
+  
+  
+  .post-header{
+    margin-top: 10rem;
+    font-weight: 500;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .post-details{
+    text-align: center;
+    font-weight: 300;
+  }
+  
 
 
