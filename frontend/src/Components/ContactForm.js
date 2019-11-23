@@ -9,9 +9,7 @@ function ContactForm() {
   return (
     <Container>
       <h1 style={{textAlign: "center"}}> Contact Us</h1>
-      <Card>
-      
-      </Card>
+        
     </Container>
     
   );
