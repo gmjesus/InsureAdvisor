@@ -14,6 +14,10 @@ var UserSchema = new Schema({
   Email: {
     type: String,
     required: 'Enter email of user'
+  },
+  IsCanadianCitizen: {
+    type: Boolean,
+    required: 'Are you citzenship status'
   }
 });
 
