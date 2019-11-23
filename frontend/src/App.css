@@ -20,3 +20,44 @@
 .App-link {
   color: #09d3ac;
 }
+.sample{
+  margin: auto;
+  background-color: transparent;
+}
+
+.intro-text{
+  text-align: center;
+  padding: 20rem;
+  margin-bottom: 10rem;
+}
+
+body{
+background: url(https://images.pond5.com/young-man-office-cartoon-hd-footage-088280711_prevstill.jpeg) fixed;
+  background-size: cover;
+
+}
+
+.search{
+  border-color: black;
+  color: black;
+}
+
+
+.search:hover{
+  background-color: transparent;
+  color: black;
+}
+
+.mr-sm-2{
+border-color: black;
+}
+
+.sampleD{
+  display: flex;
+}
+
+.img1{
+  height: 10rem;
+}
+
+
