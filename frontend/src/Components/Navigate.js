@@ -7,7 +7,7 @@ from 'react-bootstrap';
 function Navigate() {
   return (
       <Container>
-    <Navbar class = 'sample' bg="white" expand="lg">
+    <Navbar bg="transparent" expand="lg">
   <Navbar.Brand href="#home">InsuranceAdvisor</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
