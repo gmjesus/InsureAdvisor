@@ -10,20 +10,7 @@ function AboutForm() {
     <Container>
       <h1 style={{textAlign: "center"}}> About Us</h1>
       <Card>
-      <Form>
-        
-        <Form.Check 
-          label="Property Insurance"
-        />
-        {['Property', 'Life', 'Car', 'Health and Dental', 'Fire', 'Social'].map(type => (
-            <Form.Check 
-              id={type}
-              label={`${type} Insurance`}
-            />
-        ))}
-
-        <Button variant="primary" type="submit">Submit</Button>
-        </Form>
+     
       </Card>
     </Container>
     
