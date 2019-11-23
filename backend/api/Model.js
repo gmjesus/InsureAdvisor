@@ -23,17 +23,22 @@ var UserSchema = new Schema({
     type: String,
     required: 'Enter the insurance type'
   }
-  
 });
 
 var AdvisorSchema = new Schema({
-  Name:{
+  Name: {
     type: String,
     required: 'Enter the full name'
+  },
+  Email: {
+    type: String,
+    required: 'Enter email of advisor'
+  },
+  Password: {
+    type: String,
+    required: 'Enter password of advisor'
   }
-
-
-    
 });
+
 module.exports = mongoose.model('Advisors', AdvisorSchema);
 module.exports = mongoose.model('Users', UserSchema);
