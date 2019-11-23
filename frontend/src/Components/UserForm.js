@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Button, Form, FormGroup,Label, Input, Container}
+import { Card, Button, Form, FormGroup,Label, Input, Container}
 from 'react-bootstrap';
 
 
@@ -8,7 +8,8 @@ from 'react-bootstrap';
 function UserForm() {
   return (
     <Container>
-      <h1 style={{textAlign: "center"}}> USER SIGN UP FORM</h1>
+      <h1 style={{textAlign: "center"}}> User Sign Up Form</h1>
+      <Card>
       <Form>
         <Form.Group controlId="formGroupEmail">
           <Form.Label>Full Name</Form.Label>
@@ -24,27 +25,23 @@ function UserForm() {
           <Form.Control type="Age" placeholder="Enter Age" />
         </Form.Group>
 
-      </Form>
-
-      <Form>
-      <Form.Group controlId="formGroupEmail">
+        <Form.Group controlId="formGroupEmail">
           <Form.Label>What types of insurance are you looking for?</Form.Label>
         
         </Form.Group>
-      <Form.Check 
-        label="Property Insurance"
-      />
-  {['Property', 'Life', 'Car', 'Health and Dental', 'Fire', 'Social'].map(type => (
-      <Form.Check 
-        id={type}
-        label={`${type} Insurance`}
-      />
-  ))}
- 
-  
-  
-  
-</Form>
+        <Form.Check 
+          label="Property Insurance"
+        />
+        {['Property', 'Life', 'Car', 'Health and Dental', 'Fire', 'Social'].map(type => (
+            <Form.Check 
+              id={type}
+              label={`${type} Insurance`}
+            />
+        ))}
+
+        <Button variant="primary" type="submit">Submit</Button>
+        </Form>
+      </Card>
     </Container>
     
   );
