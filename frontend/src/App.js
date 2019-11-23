@@ -4,6 +4,8 @@ import UserForm from './Components/UserForm'
 import Navigate from './Components/Navigate';
 import Redirect from './Components/Redirect';
 import BrokerForm from './Components/BrokerForm';
+import ContactForm from './Components/ContactForm';
+import AboutForm from './Components/AboutForm';
 
 import {
   BrowserRouter as Router,
@@ -29,6 +31,16 @@ function App() {
           <Route path="/broker-form">
             <div className='user-form'>
               <BrokerForm className='uForm'></BrokerForm>       
+            </div>
+          </Route>
+          <Route path="/contact">
+            <div className='user-form'>
+              <ContactForm className='uForm'></ContactForm>       
+            </div>
+          </Route>
+          <Route path="/about">
+            <div className='user-form'>
+              <AboutForm className='uForm'></AboutForm>       
             </div>
           </Route>
         </Switch>
