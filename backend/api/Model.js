@@ -15,13 +15,17 @@ var UserSchema = new Schema({
     type: String,
     required: 'Enter email of user'
   },
-  IsCanadianCitizen: {
-    type: Boolean,
-    required: 'Are you citzenship status'
-  },
-  InsuranceType: {
+  Citizenship: {
     type: String,
-    required: 'Enter the insurance type'
+    required: 'Enter your citzenship status'
+  },
+  InsuranceTypes: [{
+    type: String,
+    required: 'Enter the insurance types'
+  }],
+  MaxLimit: {
+    type: Number,
+    required: 'Enter your maximum monthly limit'
   }
 });
 
