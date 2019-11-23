@@ -11,15 +11,42 @@ function UserForm() {
       <h1 style={{textAlign: "center"}}> USER SIGN UP FORM</h1>
       <Form>
         <Form.Group controlId="formGroupEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control type="full name" placeholder="Enter Full Name" />
         </Form.Group>
-        <Form.Group controlId="formGroupPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+
+        <Form.Group controlId="formGroupEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="Email" placeholder="Enter Email" />
         </Form.Group>
+        <Form.Group controlId="formGroupEmail">
+          <Form.Label>Age</Form.Label>
+          <Form.Control type="Age" placeholder="Enter Age" />
+        </Form.Group>
+
       </Form>
+
+      <Form>
+      <Form.Group controlId="formGroupEmail">
+          <Form.Label>What types of insurance are you looking for?</Form.Label>
+        
+        </Form.Group>
+      <Form.Check 
+        label="Property Insurance"
+      />
+  {['Property', 'Life', 'Car', 'Health and Dental', 'Fire', 'Social'].map(type => (
+      <Form.Check 
+        id={type}
+        label={`${type} Insurance`}
+      />
+  ))}
+ 
+  
+  
+  
+</Form>
     </Container>
+    
   );
 }
 
