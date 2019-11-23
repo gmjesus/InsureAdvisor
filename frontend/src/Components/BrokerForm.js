@@ -34,7 +34,7 @@ function BrokerForm() {
         />
         {['Property', 'Life', 'Car', 'Health and Dental', 'Fire', 'Social'].map(type => (
             <Form.Check 
-              id={type}
+              key={type}
               label={`${type} Insurance`}
             />
         ))}

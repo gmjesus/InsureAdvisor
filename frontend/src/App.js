@@ -3,13 +3,13 @@ import './App.css';
 import UserForm from './Components/UserForm'
 import Navigate from './Components/Navigate';
 import Redirect from './Components/Redirect';
+import BrokerForm from './Components/BrokerForm';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-
 
 function App() {
   return (
@@ -24,6 +24,11 @@ function App() {
           <Route path="/user-form">
             <div className='user-form'>
               <UserForm className='uForm'></UserForm>       
+            </div>
+          </Route>
+          <Route path="/broker-form">
+            <div className='user-form'>
+              <BrokerForm className='uForm'></BrokerForm>       
             </div>
           </Route>
         </Switch>
