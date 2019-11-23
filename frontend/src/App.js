@@ -47,9 +47,8 @@ function App() {
               <AboutForm className='uForm'></AboutForm>       
             </div>
           </Route>
-          <Route>
-          <PostSubmit>
-          </PostSubmit>
+          <Route path="/post-submit">
+            <PostSubmit />
           </Route>
         </Switch>
       </div>

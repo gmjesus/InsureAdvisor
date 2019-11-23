@@ -59,6 +59,7 @@ function UserForm() {
           MaxLimit: maxLimit
         }
       });
+      window.location.href = "/post-submit";
     }
     postData();
   }
