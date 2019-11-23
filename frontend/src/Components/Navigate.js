@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Navbar, Nav, NavDropdown,FormControl,Container, Form, Button}
 from 'react-bootstrap';
+import logo from '../Images/i_logo.ico'
 
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,9 @@ function Navigate() {
   return (
     <Container>
         <Navbar bg="transparent" expand="lg">
-        <Navbar.Brand href="/">InsuranceAdvisor</Navbar.Brand>
+        <Navbar.Brand href="/">
+        <img src = {logo} className = 'logo'></img>
+        InsuranceAdvisor</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
