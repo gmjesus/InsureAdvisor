@@ -30,7 +30,7 @@ function App() {
             <Redirect />
           
             <div className = 'tt'>
-            <div className="deconstructed">
+            <div className="effect">
   Trusted
   <div>Trusted</div>
   <div>Trusted</div>
@@ -40,7 +40,7 @@ function App() {
 </div>
 
 <div className = 'ttt'>
-            <div className="deconstructed">
+            <div className="effect">
   Quotes
   <div>Quotes</div>
   <div>Quotes</div>

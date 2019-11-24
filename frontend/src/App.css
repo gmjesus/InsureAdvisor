@@ -28,7 +28,7 @@
 }
 body{
   background-size: cover;
-  background: url(https://i.ytimg.com/vi/zILpSTIy6Fw/maxresdefault.jpg);
+  background: url(https://steamuserimages-a.akamaihd.net/ugc/270598716228437698/A6FA3B818C99CD17B15EA2B80E62A483FAEA6DB6/);
   background-size: cover;
 }
 
@@ -98,15 +98,15 @@ margin-right: 10rem;
   margin-top: -100rem;
   }
    .button1{
+     border-style: solid;
+    border-color: white;
     margin-top: -35rem;
     margin-bottom: 32rem;
     background-color: transparent;
   width: 40%;
 color: white;
   transition-duration: 1s;
-  border-color: black;
-  
-  border-width: thick;
+ 
   }
   
   .button1:hover{
@@ -117,16 +117,16 @@ color: white;
   }
   
   .button2{
-    margin-top: -35rem;
-    margin-bottom: 32rem;
-    background-color: transparent;
-  width: 40%;
+    border-style: solid;
+   border-color: white;
+   margin-top: -35rem;
+   margin-bottom: 32rem;
+   background-color: transparent;
+ width: 40%;
 color: white;
-  transition-duration: 1s;
-  border-color: black;
-  
-  border-width: thick;
-  }
+ transition-duration: 1s;
+
+ }
   
   .button2:hover{
     transform: scale(1.1);
@@ -250,7 +250,7 @@ color: white;
 
 
   
-  .deconstructed {
+  .effect {
     position: relative;
     margin: auto;
     height: 0.71em;
@@ -262,7 +262,7 @@ color: white;
     line-height: 1.03em;
   }
   
-  .deconstructed > div {
+  .effect > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -272,25 +272,25 @@ color: white;
     pointer-events: none;
   }
   
-  .deconstructed > div:nth-child(1) {
+  .effect > div:nth-child(1) {
     -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
     mask-image: linear-gradient(black 25%, transparent 25%);
     animation: deconstructed1 10s infinite;
   }
   
-  .deconstructed > div:nth-child(2) {
+  .effect > div:nth-child(2) {
     -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
     animation: deconstructed2 10s infinite;
   }
   
-  .deconstructed > div:nth-child(3) {
+  .effect > div:nth-child(3) {
      -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
     animation: deconstructed3 10s infinite;
   }
   
-  .deconstructed > div:nth-child(4) {
+  .effect > div:nth-child(4) {
      -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
     mask-image: linear-gradient(transparent 75%, black 75%);
     animation: deconstructed4 10s infinite;
@@ -363,6 +363,24 @@ color: white;
   .ttt{
     margin-top: -15rem;
     margin-left: 55rem;
+  }
+
+  .card1{
+    color: white;
+    background-color: transparent;
+    font-weight: 200;
+    border-style: solid;
+  }
+
+  .htitle{
+    margin-top: 2rem;
+    color: white;
+    font-weight: 300;
+  }
+
+
+  .card1{
+    margin-bottom: 10rem;
   }
 
 

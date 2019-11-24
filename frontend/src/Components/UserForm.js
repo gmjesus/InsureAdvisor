@@ -66,8 +66,8 @@ function UserForm() {
 
   return (
     <Container>
-      <h1 style={{textAlign: "center"}}> User Sign Up Form</h1>
-      <Card>
+      <h1 className = 'htitle' style={{textAlign: "center"}}> User Sign Up Form</h1>
+      <Card className = 'card1'>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="name">
             <Form.Label>Full Name</Form.Label>
@@ -113,7 +113,6 @@ function UserForm() {
               <Form.Control required type="max" placeholder="Enter Maximum Monthly Limit" onChange={max => setMaxLimit(max.target.value)}/>
             </InputGroup>
           </Form.Group>
-
           <hr />
           <Button variant="primary" type="submit">Submit</Button>
 
