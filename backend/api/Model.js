@@ -34,14 +34,26 @@ var AdvisorSchema = new Schema({
     type: String,
     required: 'Enter the full name'
   },
+  Company: {
+    type: String,
+    required: 'Enter your company'
+  },
   Email: {
     type: String,
     required: 'Enter email of advisor'
   },
-  Password: {
+  Citizenship: {
     type: String,
-    required: 'Enter password of advisor'
-  }
+    required: 'Enter your citzenship status'
+  },
+  InsuranceTypes: [{
+    type: String,
+    required: 'Enter the insurance types'
+  }],
+  Range: [{
+    type: Number,
+    required: 'Enter your minimum monthly limit'
+  }]
 });
 
 module.exports = mongoose.model('Advisors', AdvisorSchema);
