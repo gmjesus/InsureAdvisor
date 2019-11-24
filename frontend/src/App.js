@@ -7,13 +7,13 @@ import BrokerForm from './Components/BrokerForm';
 import ContactForm from './Components/ContactForm';
 import AboutForm from './Components/AboutForm';
 import PostSubmit from './Components/PostSubmit'
+import Matches from './Components/Matches';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import ReturnData from './Components/ReturnData';
 
 
 function App() {
@@ -54,8 +54,8 @@ function App() {
           <Route path="/post-submit">
             <PostSubmit />
           </Route>
-          <Route>
-          <ReturnData></ReturnData>
+          <Route path="/matches">
+            <Matches />
           </Route>
         </Switch>
       </div>

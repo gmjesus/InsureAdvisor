@@ -1,29 +1,8 @@
 import React from 'react';
 import '../App.css';
-import { Container} from 'react-bootstrap';
-import { Link } from "react-router-dom";
+import { Container } from 'react-bootstrap';
 
-function ReturnData() {
-  return (
-    <Container>
-      <div style={{margin: "auto" }} className = 'returnD'>
-
-      <h1 class = 'return-header'>Return Data</h1>
-      <div className = 'return-details'>
-      <p>Name: </p>
-      <p>Email: </p>
-      <p>Age: </p>
-      <p>Citizenship: </p>
-      <p>MaxLimit: </p>
-      </div>
-        </div>
-    </Container>
-  );
-}
-
-export default ReturnData;
-
-let array = [
+const array = [
 	{
 		"InsuranceTypes": [
 			"Property",
@@ -66,6 +45,22 @@ let array = [
 	}
 ];
 
-for (i = 0; i < array.length; i++){
-	console.log(array[i].Name);
+function Matches() {
+  return (
+    <Container>
+      <div style={{margin: "auto" }} className = 'returnD'>
+
+      <h1 class = 'return-header'>Return Data</h1>
+				<div className = 'return-details'>
+					<p>Name: </p>
+					<p>Email: </p>
+					<p>Age: </p>
+					<p>Citizenship: </p>
+					<p>MaxLimit: </p>
+				</div>
+      </div>
+    </Container>
+  );
 }
+
+export default Matches;
