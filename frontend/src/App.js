@@ -13,10 +13,14 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ReturnData from './Components/ReturnData';
+
 
 function App() {
   return (
-    <Router>
+
+
+  <Router>
       <div>
         <Navigate className='sample'/>
         <Switch>
@@ -49,6 +53,9 @@ function App() {
           </Route>
           <Route path="/post-submit">
             <PostSubmit />
+          </Route>
+          <Route>
+          <ReturnData></ReturnData>
           </Route>
         </Switch>
       </div>

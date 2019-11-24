@@ -222,4 +222,14 @@ border-color: black;
   a.linkedin{
     color: black;
   }
+
+  .returnD{
+    text-align: center;
+
+  }
+
+  .return-details{
+    width: 50%;
+    float: left;
+  }
   
