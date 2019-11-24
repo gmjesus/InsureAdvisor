@@ -8,7 +8,7 @@ var express = require('express'),
   
 // Mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/InsureAdvisorDB', { 
+mongoose.connect('mongodb+srv://admin:admin@cluster0-cn8wj.gcp.mongodb.net/test?retryWrites=true&w=majority', { 
 	useNewUrlParser: true,
 	useUnifiedTopology: true 
 }); 
