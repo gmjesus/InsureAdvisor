@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Card, Button, Form, FormGroup,Label, Input, Container}
+import { Col, Row, Card, Button, Form, FormGroup,Label, Input, Container, Image}
 from 'react-bootstrap';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import{
@@ -8,6 +8,7 @@ faFacebook,
 faTwitter,
 faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import image from '../Images/map.PNG'
 
 
 
@@ -15,12 +16,14 @@ function ContactForm() {
   return (
     <Container>
       <div className='contact-details'>
-      <h1 class = 'contact-header'> Contact Us</h1>
+      <h1 style ={{textAlign:"center",color:"white"}}> Contact Us</h1>
    
-     <p className = 'contact-details'>We are here to connect you to the best Financial Advisor based on your preferences. 
+     <p className = 'bd' style ={{textAlign:"center",color:"white"}}>We are here to connect you to the best Financial Advisor based on your preferences. 
       For any questions or inquires please feel free to contact us at 224-555-3214. We would be more than happy to answer your questions. 
       Don't Worry, We Got Your Back!</p>
-    <div className = 'alignment'> 
+    <div > 
+    <Row>
+      <Col>
       <Form>
         <Form.Group controlId="formGroupName">
           <Form.Label style ={{textAlign:"center",color:"white"}}>Full Name</Form.Label>
@@ -36,10 +39,15 @@ function ContactForm() {
               </Form.Group>
         
         <Button style ={{textAlign:"center",color:"white"}} variant="outline-dark">Send</Button>
+     
 
-
- 
       </Form>
+      </Col>
+      <Col>
+      <Image style = {{marginTop:"2rem"}} src ={image} fluid />
+      </Col>
+      </Row>
+      
 </div>
 </div>
 <div className = "social-containers">
