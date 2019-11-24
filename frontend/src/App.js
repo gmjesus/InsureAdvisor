@@ -25,11 +25,31 @@ function App() {
         <Navigate className='sample'/>
         <Switch>
         <Route exact path="/">
+
             <h1 className='intro-text'> Welcome to InsureAdvisor</h1>
             <Redirect />
-         
-            <img src = 'https://webstockreview.net/images/animated-clipart-business-17.gif' className='home-image'></img>
           
+            <div className = 'tt'>
+            <div class="deconstructed">
+  Trusted
+  <div>Trusted</div>
+  <div>Trusted</div>
+  <div>Trusted</div>
+  <div>Trusted</div>
+</div>
+</div>
+
+<div className = 'ttt'>
+            <div class="deconstructed">
+  Quotes
+  <div>Quotes</div>
+  <div>Quotes</div>
+  <div>Quotes</div>
+  <div>Quotes</div>
+</div>
+</div>
+
+
           </Route>
           <Route path="/user-form">
             <div className='user-form'>

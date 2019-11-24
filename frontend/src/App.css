@@ -1,6 +1,7 @@
 .nav-header{
   font-weight: 500;
   font-size: 2rem;
+  color: white;
 }
 
 .navbarn{
@@ -10,11 +11,12 @@
 
 .intro-text{
   margin-top: -10rem;
-  color: black; 
+  color: white; 
   font: bold 52px Helvetica, Arial, Sans-Serif;
-  text-shadow: 1px 1px #ffffff, 
-               2px 2px #ffffff, 
-               3px 3px #ffffff;
+  text-shadow: 1px 1px black, 
+               2px 2px black, 
+               3px 3px black
+               ;
   text-align: center;
   padding: 20rem;
   margin-bottom: 10rem;
@@ -23,18 +25,10 @@
 
 .intro-text:hover{
   transition-duration: 2s;
-  color: white; 
-  font: bold 52px Helvetica, Arial, Sans-Serif;
-  text-shadow: 1px 1px #000000, 
-               2px 2px #000000, 
-               3px 3px #000000;
-  text-align: center;
-  padding: 20rem;
-  margin-bottom: 10rem;
 }
 body{
   background-size: cover;
-  background: url(https://i.pinimg.com/originals/8b/54/f8/8b54f8394a8b525cdcbcf117533f64ba.jpg);
+  background: url(https://i.ytimg.com/vi/zILpSTIy6Fw/maxresdefault.jpg);
   background-size: cover;
 }
 
@@ -57,7 +51,7 @@ body{
 }
 
 .mr-sm-2{
-border-color: black;
+border-color: white;
 background-color: transparent;
 }
 
@@ -108,37 +102,39 @@ margin-right: 10rem;
     margin-bottom: 32rem;
     background-color: transparent;
   width: 40%;
-
+color: white;
   transition-duration: 1s;
-  border-color: #000000;
+  border-color: black;
+  
   border-width: thick;
   }
   
   .button1:hover{
     transform: scale(1.1);
     transition-duration: .5s;
-    background-color: #ffffff;
-    border-color: #000000;
+    background-color: white;
+    border-color: white;
   }
   
   .button2{
     margin-top: -35rem;
     margin-bottom: 32rem;
     background-color: transparent;
-  width: 30%;
-  transition-duration: 1s;
-  border-color: #000000;
   width: 40%;
+color: white;
+  transition-duration: 1s;
+  border-color: black;
+  
   border-width: thick;
   }
   
   .button2:hover{
     transform: scale(1.1);
     transition-duration: .5s;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    border-color: black;
+    background-color: white;
+    border-color: white;
   }
+  
   
   .home-image{
     width: 20%;
@@ -250,4 +246,126 @@ margin-right: 10rem;
     width: 50%;
     float: left;
   }
+
+
+
   
+  .deconstructed {
+    position: relative;
+    margin: auto;
+    height: 0.71em;
+    color: transparent;
+    font-family: 'Cambay', sans-serif;
+    font-size: 10vw;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.03em;
+  }
+  
+  .deconstructed > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    pointer-events: none;
+  }
+  
+  .deconstructed > div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 10s infinite;
+  }
+  
+  .deconstructed > div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 10s infinite;
+  }
+  
+  .deconstructed > div:nth-child(3) {
+     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 10s infinite;
+  }
+  
+  .deconstructed > div:nth-child(4) {
+     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 10s infinite;
+  }
+  
+  @keyframes deconstructed1 {
+    0% {
+      transform: translateX(100%);
+    }
+    26% {
+      transform: translateX(0%);
+    }
+    83% {
+      transform: translateX(-0.1%);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+  
+  @keyframes deconstructed2 {
+    0% {
+      transform: translateX(100%);
+    }
+    24% {
+      transform: translateX(0.5%);
+    }
+    82% {
+      transform: translateX(-0.2%);
+    }
+    100% {
+      transform: translateX(-125%);
+    }
+  }
+  
+  @keyframes deconstructed3 {
+    0% {
+      transform: translateX(100%);
+    }
+    22% {
+      transform: translateX(0%);
+    }
+    81% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-130%);
+    }
+  }
+  
+  @keyframes deconstructed4 {
+    0% {
+      transform: translateX(100%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-135%);
+    }
+  }
+
+  .tt{
+    margin-top: -30rem;
+  }
+
+  .ttt{
+    margin-top: -15rem;
+    margin-left: 55rem;
+  }
+
+
+
+
+
