@@ -156,3 +156,70 @@ border-color: black;
   .aboutText{
     margin-top:5rem;
   }
+
+  .contact-details{
+    width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: auto;
+  }
+  
+  .body-details{
+    width: 80%;
+  }
+  
+  .body-details p{
+  width: 80%;
+  }
+  
+  .alignment {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  #formGroupMessage {
+  height: 150px;
+  border: 1px solid;
+  }
+  
+  ::-webkit-input-placeholder { 
+    text-align: left;
+    
+  }
+  
+  
+  .social-containers {
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    background: transparent;
+    padding: 25px 50px;
+  }
+  
+  .social-containers h2{
+    font-size: 1.1rem;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.linkedin{
+    color: black;
+  }
+  
