@@ -13,7 +13,7 @@ function Navigate() {
         <Navbar bg="transparent" expand="lg" varient="dark">
         <Navbar.Brand style= {{color:"white"}} href="/">
         <img src = {logo} className = 'logo'></img>
-        InsuranceAdvisor</Navbar.Brand>
+        InsureAdvisor</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav style= {{color:"white"}} className="ml-auto">
