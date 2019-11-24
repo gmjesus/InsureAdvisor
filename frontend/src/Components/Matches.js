@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Container, Card, Col, Row } from 'react-bootstrap';
+import { Container, Card, Col, Row, Button } from 'react-bootstrap';
 import axios from 'axios';
 import {
   BrowserRouter as
@@ -83,7 +83,9 @@ function Matches() {
 	 
   return (
     <Container>
-			<h1 style={{textAlign: "center"}}>Your Matches</h1>
+			<h1 style={{textAlign: "center"}} className = 'matches-header'>Your Matches</h1>
+			{matches.length === 0 ? <div className = 'matches-b'><p>No matches were found</p> 
+			<Button as={Link}  to="/user-form" variant="light" className='bb'>For Clients</Button></div> : ''}
       {
         matches.map((item, key) => {
 					return (
