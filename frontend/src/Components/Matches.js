@@ -79,8 +79,15 @@ function Matches() {
 		getUsers();
 	}, []);
 
+     
+if(users == null || advisor == null){
+    return(			<h1 style={{textAlign: "center"}} className = 'matches-header'>Loading...</h1>
+    )
+}
+else{
+
 	matches = filteringCountry(users,advisor);
-	 
+
   return (
     <Container>
 			<h1 style={{textAlign: "center"}} className = 'matches-header'>Your Matches</h1>
@@ -110,6 +117,7 @@ function Matches() {
       }
     </Container>
   );
+    }
 }
 
 export default Matches;
