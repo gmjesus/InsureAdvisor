@@ -30,7 +30,7 @@ function App() {
             <Redirect />
           
             <div className = 'tt'>
-            <div class="deconstructed">
+            <div className="deconstructed">
   Trusted
   <div>Trusted</div>
   <div>Trusted</div>
@@ -40,7 +40,7 @@ function App() {
 </div>
 
 <div className = 'ttt'>
-            <div class="deconstructed">
+            <div className="deconstructed">
   Quotes
   <div>Quotes</div>
   <div>Quotes</div>
@@ -74,7 +74,7 @@ function App() {
           <Route path="/post-submit">
             <PostSubmit />
           </Route>
-          <Route path="/matches">
+          <Route path="/matches/:id">
             <Matches />
           </Route>
         </Switch>

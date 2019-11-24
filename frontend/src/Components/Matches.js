@@ -1,64 +1,110 @@
 import React from 'react';
 import '../App.css';
-import { Container } from 'react-bootstrap';
+import { Container, Card, Col, Row } from 'react-bootstrap';
+import axios from 'axios';
+import {
+  BrowserRouter as
+  Link,
+  useParams
+} from "react-router-dom";
 
-const array = [
-	{
-		"InsuranceTypes": [
-			"Property",
-			"Disability",
-			"Social"
-		],
-		"_id": "5dd9b3340750950b40dc348e",
-		"Name": "Jesus Garcia Moreno",
-		"Email": "jesus2208f@gmail.com",
-		"Age": 19,
-		"Citizenship": "Canada",
-		"MaxLimit": 500,
-		"__v": 0
-	},
-	{
-		"InsuranceTypes": [
-			"Property",
-			"Fire"
-		],
-		"_id": "5dd9b98a0750950b40dc348f",
-		"Name": "Bobby",
-		"Email": "bobbyf@gmail.com",
-		"Age": 28,
-		"Citizenship": "Canada",
-		"MaxLimit": 200,
-		"__v": 0
-	},
-	{
-		"InsuranceTypes": [
-			"Health and Dental",
-			"Other"
-		],
-		"_id": "5dd9b9db0750950b40dc3490",
-		"Name": "Dave Han",
-		"Email": "dava@gmail.com",
-		"Age": 19,
-		"Citizenship": "United States",
-		"MaxLimit": 900,
-		"__v": 0
-	}
-];
+var filteringData = function(userInputs,brokerInputs)
+{
+    let newArray = userInputs.filter(object=>
+    {
+        for(var userElement of object.InsuranceTypes)
+        {
+            for(var advisorElement of brokerInputs.InsuranceTypes)
+            {
+                if (advisorElement == userElement)
+                    return object;
+            }
+        }
+    })
+    return newArray;
+};
+
+var filteringPrice = function (userInputs, brokerInputs)
+{
+    var userStuff = filteringData(userInputs,brokerInputs);
+    var  num = userStuff.filter(object=>
+    {
+
+            if((object.MaxLimit>=brokerInputs.Range[0]) && (object.MaxLimit<=brokerInputs.Range[1]))
+            {
+                return object;
+            }
+
+
+    })
+    return num;
+};
+var filteringCountry = function(userInputs,brokerInputs)
+{
+    var final = filteringPrice(userInputs,brokerInputs);
+    var x = final.filter(object=>
+    {
+
+        if(object.Citizenship == brokerInputs.Citizenship )
+        {
+            //console.log("Match Found! Here is the User Information: ");
+            return object;
+        }
+        else{
+            return;
+
+        }
+
+    })
+
+	return x;
+};
 
 function Matches() {
+	const { id } = useParams();
+	const [advisor, setAdvisor] = React.useState();
+	let matches = [];
+	const [users, setUsers] = React.useState([]);
+
+	React.useEffect(() => {
+		async function getAdvisor(){
+			const temp = await axios("http://localhost:3001/advisors/" + id);	
+			setAdvisor(temp.data);
+		}
+		async function getUsers(){
+			const temp = await axios("http://localhost:3001/users");	
+			setUsers(temp.data);
+		}
+		getAdvisor();
+		getUsers();
+	}, []);
+
+	matches = filteringCountry(users,advisor);
+	 
   return (
     <Container>
-      <div style={{margin: "auto" }} className = 'returnD'>
-
-      <h1 class = 'return-header'>Return Data</h1>
-				<div className = 'return-details'>
-					<p>Name: </p>
-					<p>Email: </p>
-					<p>Age: </p>
-					<p>Citizenship: </p>
-					<p>MaxLimit: </p>
-				</div>
-      </div>
+			<h1 style={{textAlign: "center"}}>Your Matches</h1>
+      {
+        matches.map((item, key) => {
+					return (
+						<Card key={key}>
+							<Card.Body>
+								<Card.Title>{item.Name}</Card.Title>
+								<Row>
+									<Col>
+										<div><strong>Age: </strong>{item.Age}</div>
+										<div><strong>Email: </strong>{item.Email}</div>
+										<div><strong>Country of Residency: </strong>{item.Citizenship}</div>
+									</Col>
+									<Col>
+										<div><strong>Monthly Limit: </strong>${item.MaxLimit}</div>
+										<div><strong>Insurance Types: </strong>{item.InsuranceTypes.join(', ')}</div>
+									</Col>
+								</Row>
+							</Card.Body>
+						</Card>
+					)})
+      }
     </Container>
   );
 }

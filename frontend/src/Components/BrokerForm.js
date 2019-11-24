@@ -48,8 +48,8 @@ function BrokerForm() {
       types.push("Other");
     }
 
+    var range = [minLimit, maxLimit];
     async function postData(){
-      var range = [minLimit, maxLimit];
       await axios({
         method: 'post',
         url: "http://localhost:3001/advisors",
@@ -62,7 +62,17 @@ function BrokerForm() {
           Range: range,
         }
       });
-      window.location.href = "/matches";
+      returnId();
+    }
+    async function returnId(){
+      const users = await axios("http://localhost:3001/advisors");
+      let id = "";
+      users.data.forEach(element => {
+        if(element.Name === name && element.Email === email && element.Company === company && element.Citizenship === country && element.InsuranceTypes.toString() === types.toString() && element.Range.toString() === range.toString()){
+          id = element._id;
+        }
+      });
+      window.location.href = "/matches/" + id;
     }
     postData();
   }
