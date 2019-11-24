@@ -11,9 +11,9 @@ function AboutForm() {
   return (
    
     <Container>
-        <h1 style ={{textAlign: "center"}}> <b>Revolutionizing the Search for Insurance</b></h1>
+        <h1 style ={{textAlign:"center", color:"white"}}> <b>Revolutionizing the Search for Insurance</b></h1>
 
-        <p style ={{textAlign: "center"},{fontSize:"41px"}}>
+        <p style ={{color:"white", textAlign:"center", fontSize:"41px"}}>
           The hassle of long phone calls and quote estimators are over
         </p>
 
@@ -21,7 +21,7 @@ function AboutForm() {
           <Row>
             <Col style = {{textAlign:"center"}}> <Image className="w-100 p-2" src ={jesus} roundedCircle></Image></Col>
             <Col className ="aboutText" >
-              <p style ={{textAlign:"center"}}>
+              <p style ={{textAlign:"center",color:"white"}}>
                 <b>Name:</b> Jesus Garcia Moreno<br></br>
                 <b>School:</b> University of Waterloo<br></br>
                 <b>Program:</b> Computer Engineering<br></br>
@@ -30,7 +30,7 @@ function AboutForm() {
             </Col>
             <Col style = {{textAlign:"center"}}> <Image className="w-100 p-2" src ={richard} roundedCircle></Image></Col>
             <Col className ="aboutText" >
-              <p>
+              <p style ={{textAlign:"center",color:"white"}}>
               <b>Name:</b> Richard Lii<br></br>
               <b>School:</b> Western University<br></br>
               <b>Program:</b> Software Engineering<br></br>
@@ -41,7 +41,7 @@ function AboutForm() {
           <Row>
             <Col style = {{textAlign:"center"}}> <Image className="w-100 p-2" src ={arsh} roundedCircle></Image></Col>
             <Col className ="aboutText">
-              <p>
+              <p style ={{textAlign:"center",color:"white"}}>
               <b>Name:</b> Arsh Lalani<br></br>
               <b>School:</b> Western University<br></br>
               <b>Program:</b> Software Engineering<br></br>
@@ -50,7 +50,7 @@ function AboutForm() {
             </Col>
             <Col style = {{textAlign:"center"}}> <Image className="w-100 p-2" src ={aasir} roundedCircle></Image></Col>
             <Col className ="aboutText">
-              <p>
+              <p style ={{textAlign:"center",color:"white"}}>
               <b>Name:</b> Aasir Valji<br></br>
               <b>School:</b> Western University<br></br>
               <b>Program:</b> Software Engineering<br></br>
