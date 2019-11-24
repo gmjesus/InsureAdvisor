@@ -1,24 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.nav-header{
+  font-weight: 500;
+  font-size: 2rem;
 }
 
 .navbarn{
@@ -50,17 +32,24 @@
   padding: 20rem;
   margin-bottom: 10rem;
 }
-
 body{
-background: url(https://images.pond5.com/young-man-office-cartoon-hd-footage-088280711_prevstill.jpeg) fixed;
   background-size: cover;
-
+  background: url(https://i.pinimg.com/originals/8b/54/f8/8b54f8394a8b525cdcbcf117533f64ba.jpg);
+  background-size: cover;
 }
+
+.background{
+  z-index: -10;
+}
+
+
 
 .search{
-  border-color: black;
-  color: black;
+  border-color:transparent;
+  color: transparent;
+  background-color: transparent;
 }
+
 
 .search:hover{
   background-color: transparent;
@@ -69,7 +58,30 @@ background: url(https://images.pond5.com/young-man-office-cartoon-hd-footage-088
 
 .mr-sm-2{
 border-color: black;
+background-color: transparent;
 }
+
+.mr-auto{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  font-weight: 500;
+  
+}
+
+.nav-1{
+margin-right: 10rem;
+  }
+  
+  .nav-2{
+    margin-left: 4rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
 
 .sampleD{
   display: flex;
@@ -91,14 +103,15 @@ border-color: black;
   padding: 10rem;
   margin-top: -100rem;
   }
-  
-  .button1{
+   .button1{
     margin-top: -35rem;
     margin-bottom: 32rem;
     background-color: transparent;
-  width: 25%;
+  width: 40%;
+
   transition-duration: 1s;
   border-color: #000000;
+  border-width: thick;
   }
   
   .button1:hover{
@@ -112,9 +125,11 @@ border-color: black;
     margin-top: -35rem;
     margin-bottom: 32rem;
     background-color: transparent;
-  width: 25%;
+  width: 30%;
   transition-duration: 1s;
   border-color: #000000;
+  width: 40%;
+  border-width: thick;
   }
   
   .button2:hover{
@@ -122,31 +137,34 @@ border-color: black;
     transition-duration: .5s;
     background-color: #ffffff;
     border-color: #ffffff;
+    border-color: black;
   }
   
   .home-image{
-    float: right;
-    border-radius: 50%;
-    margin-top: -40rem;
-  }
+    width: 20%;
+      float: right;
+      margin-right: 2rem;
+      border-radius: 50%;
+      margin-top: -40rem;
+    }
   
-  .post-displayy{
-    background-color: rgba(238, 238, 238, 0.4) !important;
-  background-image: url(https://biocharculture.xyz/image/62772-full_image-to-video-filter-confetti.gif);
-  background-blend-mode: color;
-    width: 40%;
-  }
-  
-  .logo{
-    width: 30%;
-  }
+    .post-displayy{
+      background-color: rgba(238, 238, 238, 0.4) !important;
+    background-image: url(https://biocharculture.xyz/image/62772-full_image-to-video-filter-confetti.gif);
+    background-blend-mode: color;
+      width: 40%;
+    }
 
-  .post-header{
-    margin-top: 10rem;
-    font-weight: 500;
-    text-align: center;
-    z-index: 10;
-  }
+    .logo{
+      width: 30%;
+    }
+  
+    .post-header{
+      margin-top: 10rem;
+      font-weight: 500;
+      text-align: center;
+      z-index: 10;
+    }
 
   .post-details{
     text-align: center;

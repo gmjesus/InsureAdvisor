@@ -28,7 +28,7 @@ function App() {
             <h1 className='intro-text'> Welcome to InsureAdvisor</h1>
             <Redirect />
          
-            <img src = 'https://www.exzie.io/dist/images/welcome.gif' className='home-image'></img>
+            <img src = 'https://webstockreview.net/images/animated-clipart-business-17.gif' className='home-image'></img>
           
           </Route>
           <Route path="/user-form">
