@@ -88,19 +88,20 @@ function Matches() {
 			<Button as={Link}  to="/user-form" variant="light" className='bb'>For Clients</Button></div> : ''}
       {
         matches.map((item, key) => {
+					const mailto = "mailto:" + item.Email;
 					return (
-						<Card key={key}>
+						<Card className = 'matches-details' key={key}>
 							<Card.Body>
 								<Card.Title>{item.Name}</Card.Title>
 								<Row>
 									<Col>
-										<div><strong>Age: </strong>{item.Age}</div>
-										<div><strong>Email: </strong>{item.Email}</div>
-										<div><strong>Country of Residency: </strong>{item.Citizenship}</div>
+										<div className = 'matches-p'><strong>Age: </strong>{item.Age}</div>
+										<div className = 'matches-p'><strong>Email: </strong><a href={mailto}>{item.Email}</a></div>
+										<div className = 'matches-p'><strong>Country of Residency: </strong>{item.Citizenship}</div>
 									</Col>
 									<Col>
-										<div><strong>Monthly Limit: </strong>${item.MaxLimit}</div>
-										<div><strong>Insurance Types: </strong>{item.InsuranceTypes.join(', ')}</div>
+									<div className = 'matches-p'><strong>Monthly Limit: </strong>${item.MaxLimit}</div>
+									<div className = 'matches-p'><strong>Insurance Types: </strong>{item.InsuranceTypes.join(', ')}</div>
 									</Col>
 								</Row>
 							</Card.Body>

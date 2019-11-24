@@ -11,9 +11,9 @@ function AboutForm() {
   return (
    
     <Container>
-        <h1 style ={{textAlign:"center", color:"white"}}> <b>Revolutionizing the Search for Insurance</b></h1>
+        <h1 style ={{textAlign:"center", color:"white"}}> <b className='b-about'>Revolutionizing the Search for Insurance</b></h1>
 
-        <p style ={{color:"white", textAlign:"center", fontSize:"41px"}}>
+        <p class = 'p-about'>
           The hassle of long phone calls and quote estimators are over
         </p>
 

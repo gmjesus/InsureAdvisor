@@ -372,6 +372,7 @@ color: white;
     background-color: transparent;
     font-weight: 200;
     border-style: solid;
+    margin-bottom: 10rem;
   }
 
   .htitle{
@@ -381,14 +382,10 @@ color: white;
   }
 
 
-  .card1{
-    margin-bottom: 10rem;
-  }
-
   .matches-header{
     font-weight: 200;
     color: white;
-    margin-top: 14rem;
+    margin-top: 3rem;
   }
 
   .matches-b p{
@@ -401,6 +398,70 @@ color: white;
   .bb{
     border-color: wheat;
     border-style: solid;
+  }
+
+  .broker-header{
+    margin-top: 2rem;
+    color: white;
+    font-weight: 300;
+    
+  }
+
+  .card2{
+    color: white;
+    background-color: transparent;
+    font-weight: 200;
+    border-style: solid;
+    margin-bottom: 10rem;
+  }
+
+  .b-about{
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .p-about{
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  }
+
+  .copyright{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    bottom: 0;
+    position: absolute;
+
+    text-align: center;
+    font-size: 2px;
+    font-weight: 100;
+    color: white;
+  }
+
+  .copyright h5{
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+  }
+
+  .matches-details{
+    background-color: transparent;
+    color: white;
+  }
+
+  .matches-p{
+    font-weight: 200;
+  }
+
+  .contact-header{
+    margin-top: 2rem;
+    color: white;
+    font-weight: 300;
+    
   }
 
 

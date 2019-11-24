@@ -79,8 +79,8 @@ function BrokerForm() {
 
   return (
     <Container>
-      <h1 style={{textAlign: "center"}}>Broker Sign Up Form</h1>
-      <Card>
+      <h1 style={{textAlign: "center"}} className = 'broker-header'>Broker Sign Up Form</h1>
+      <Card className = 'card2'> 
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="name">
             <Form.Label>Full Name</Form.Label>

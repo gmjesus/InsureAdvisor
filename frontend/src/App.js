@@ -8,6 +8,7 @@ import ContactForm from './Components/ContactForm';
 import AboutForm from './Components/AboutForm';
 import PostSubmit from './Components/PostSubmit'
 import Matches from './Components/Matches';
+import Footer from './Components/Footer';
 
 import {
   BrowserRouter as Router,
@@ -49,30 +50,34 @@ function App() {
 </div>
 </div>
 
-
           </Route>
           <Route path="/user-form">
             <div className='user-form'>
               <UserForm className='uForm'></UserForm>       
             </div>
+            
           </Route>
           <Route path="/broker-form">
             <div className='user-form'>
               <BrokerForm className='uForm'></BrokerForm>       
             </div>
+          
           </Route>
           <Route path="/contact">
             <div className='user-form'>
               <ContactForm className='uForm'></ContactForm>       
             </div>
+          
           </Route>
           <Route path="/about">
             <div className='user-form'>
               <AboutForm className='uForm'></AboutForm>       
             </div>
+         
           </Route>
           <Route path="/post-submit">
             <PostSubmit />
+          
           </Route>
           <Route path="/matches/:id">
             <Matches />

@@ -15,9 +15,9 @@ function ContactForm() {
   return (
     <Container>
       <div className='contact-details'>
-      <h1 style ={{textAlign:"center",color:"white"}}> Contact Us</h1>
+      <h1 class = 'contact-header'> Contact Us</h1>
    
-     <p className = 'bd' style ={{textAlign:"center",color:"white"}}>We are here to connect you to the best Financial Advisor based on your preferences. 
+     <p className = 'contact-details'>We are here to connect you to the best Financial Advisor based on your preferences. 
       For any questions or inquires please feel free to contact us at 224-555-3214. We would be more than happy to answer your questions. 
       Don't Worry, We Got Your Back!</p>
     <div className = 'alignment'> 
