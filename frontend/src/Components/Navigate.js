@@ -9,18 +9,23 @@ import { Link } from "react-router-dom";
 function Navigate() {
   return (
     <Container>
-        <Navbar bg="transparent" expand="lg">
-        <Navbar.Brand className = 'nav-header' href="/">
+      <div className= "nav-white">
+        <Navbar bg="transparent" expand="lg" varient="dark">
+        <Navbar.Brand style= {{color:"white"}} href="/">
         <img src = {logo} className = 'logo'></img>
         InsuranceAdvisor</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link as={Link} class = 'nav-1' to="/about">About</Nav.Link>
-            <Nav.Link as={Link} class = 'nav-2' to="/contact">Contact</Nav.Link>
+          <Nav style= {{color:"white"}} className="ml-auto">
+            <Nav.Link style= {{color:"white"}} as={Link} to="/about">About</Nav.Link>
+            <Nav.Link style= {{color:"white"}} as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      </div>
+      
+
+      
     </Container>
   );
 }
