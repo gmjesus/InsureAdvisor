@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../App.css';
-import {Image, Card, Button, Form, FormGroup, Label, Input, Container, Col, Row}
+import {Carousel, Image, Card, Button, Form, FormGroup, Label, Input, Container, Col, Row}
 from 'react-bootstrap';
 import jesus from '../Images/Jesus.png';
 import richard from'../Images/Richard.jpg';
@@ -9,9 +9,14 @@ import aasir from '../Images/Aasir.png';
 
 function AboutForm() {
   return (
-
+   
     <Container>
-      <h1 style={{textAlign: "center"}}> About Us</h1>
+        <h1 style ={{textAlign: "center"}}> <b>Revolutionizing the Search for Insurance</b></h1>
+
+        <p style ={{textAlign: "center"},{fontSize:"41px"}}>
+          The hassle of long phone calls and quote estimators are over
+        </p>
+
         
           <Row>
             <Col style = {{textAlign:"center"}}> <Image className="w-100 p-2" src ={jesus} roundedCircle></Image></Col>
