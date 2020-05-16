@@ -8,8 +8,8 @@ function PostSubmit() {
     <Container className = 'post-displayy'>
       <div style={{margin: "auto" }} >
 				<h1 className= 'post-header'>Thank you for your submission</h1>
-                <p className= 'post-details'> Someone will be in touch with you shortly</p>
-        </div>
+        <p className= 'post-details'> Someone will be in touch with you shortly</p>
+      </div>
     </Container>
   );
 }

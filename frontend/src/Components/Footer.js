@@ -7,10 +7,10 @@ function Footer() {
   return (
     <Container className = 'footer'>
       <div>
-      <footer class = "copyright">
-        <h5>&copy; 2019 InsureAdvisor</h5>
-    </footer>
-        </div>
+        <footer class = "copyright">
+          <h5>&copy; 2019 InsureAdvisor</h5>
+        </footer>
+      </div>
     </Container>
   );
 }

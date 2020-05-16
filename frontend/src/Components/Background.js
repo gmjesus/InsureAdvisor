@@ -10,7 +10,7 @@ function Background() {
     <Container>
       <div style={{margin: "auto" }} className = 'background'>
 
-        </div>
+      </div>
     </Container>
   );
 }

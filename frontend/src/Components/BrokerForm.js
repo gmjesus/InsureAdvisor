@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import { Card, Button, Form, Container, InputGroup, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
-import { Link } from "react-router-dom";
 
 function BrokerForm() {
   const [name, setName] = React.useState();
@@ -23,30 +22,14 @@ function BrokerForm() {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     var types = [];
-    if(propertyInsurance){
-      types.push("Property");
-    }
-    if (lifeInsurance) {
-      types.push("Life");
-    }
-    if (carInsurance) {
-      types.push("Car");
-    }
-    if (healthInsurance) {
-      types.push("Health and Dental");
-    } 
-    if (disabilityInsurance) {
-      types.push("Disability");
-    } 
-    if (fireInsurance) {
-      types.push("Fire");
-    } 
-    if (socialInsurance) {
-      types.push("Social");
-    } 
-    if (otherInsurance) {
-      types.push("Other");
-    }
+    if(propertyInsurance){ types.push("Property"); }
+    if (lifeInsurance) { types.push("Life"); }
+    if (carInsurance) { types.push("Car"); }
+    if (healthInsurance) { types.push("Health and Dental"); } 
+    if (disabilityInsurance) { types.push("Disability"); } 
+    if (fireInsurance) { types.push("Fire"); } 
+    if (socialInsurance) { types.push("Social"); } 
+    if (otherInsurance) { types.push("Other"); }
 
     var range = [minLimit, maxLimit];
     async function postData(){

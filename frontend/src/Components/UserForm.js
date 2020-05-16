@@ -21,30 +21,14 @@ function UserForm() {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     var types = [];
-    if(propertyInsurance){
-      types.push("Property");
-    }
-    if (lifeInsurance) {
-      types.push("Life");
-    }
-    if (carInsurance) {
-      types.push("Car");
-    }
-    if (healthInsurance) {
-      types.push("Health and Dental");
-    } 
-    if (disabilityInsurance) {
-      types.push("Disability");
-    } 
-    if (fireInsurance) {
-      types.push("Fire");
-    } 
-    if (socialInsurance) {
-      types.push("Social");
-    } 
-    if (otherInsurance) {
-      types.push("Other");
-    }
+    if(propertyInsurance){ types.push("Property"); }
+    if (lifeInsurance) { types.push("Life"); }
+    if (carInsurance) { types.push("Car"); }
+    if (healthInsurance) { types.push("Health and Dental"); } 
+    if (disabilityInsurance) { types.push("Disability"); } 
+    if (fireInsurance) { types.push("Fire"); } 
+    if (socialInsurance) { types.push("Social"); } 
+    if (otherInsurance) { types.push("Other"); }
 
     async function postData(){
       await axios({
